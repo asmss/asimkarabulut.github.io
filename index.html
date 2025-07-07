@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Portföy | [Adınız]</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="asım.jpeg" alt="Profil Fotoğrafı" class="profile-img">
+            <h1>ASIM</h1>
+            <p class="tagline">Bilgisayar mühendisi/öğrenci</p>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2>Hakkımda</h2>
+            <div class="about-content">
+                <p>Ben Asım Karabulut bilgisayar mühendisliği 4.sınıf öğrencisiyim Konya Teknik Üniversitesinde okuyorum. <br>Mobil uygulama tasarım ve full-stack web developer alanlarıyla ilgileniyorum ve yapay zeka alanınada ilgi duyuyorum</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="container">
+            <h2>Yetenekler</h2>
+            <div class="skills">
+                <span class="skill">HTML-CSS-JAVASCRİPT</span>
+                <span class="skill">C</span>
+                <span class="skill">REACT</span>
+                <span class="skill">MOBİL UYGULAMA TASARIM</span>
+                <span class="skill">PYTHON</span>
+                <span class="skill">NODE.JS</span>
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Projelerim</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="app_icon_512x512_bigger.png" style="width: 100%; height: 100%;" alt="">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-details">
+                        <h3>Kişisel finans takip uygulaması</h3>
+                        <p>Bu projemde flutter + firebase kullandım.Bu uygulamanın amacı başlıkta belirttiğim gibi insanların finansal manada yaptığı harcamalar,gelir-gider durumu takibi,canlı döviz verileriyle kendi gelir giderinin hesabı,hatırlatma ve planlama vb. gibi işlemlerin takibini yapmak</p>
+                      
+                    </div>
+                   <div class="download-container">
+                           <a href="./Kişisel Finans Takip.apk" download class="kişisel-apk">İndir</a>
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                       <img src="app_icon.png" style="width: 100%; height: 100%;" alt="">
+
+                    </div>
+                    <div class="project-info">
+                        <div class="project-details">
+                        <h3>Ruhsal Durum Takibi</h3>
+                        <p>Bu projemde flutter + firebase kullandım.Bu uygulamanın amacı başlıkta belirttiğim gibi insanlara psikolojik destek sağlamak,günlük olarak ruhsal durumunun değişimini görmek vb. şeyler.</p>
+                                          
+                       </div>
+                   <div class="download-container">
+                           <a href="" download class="kişisel-apk">İndir</a>
+                        </div>  
+                     </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <div class="project-details">
+                        <h3>Proje Başlığı 3</h3>
+                        <p></p>
+                        </div>
+                    <div class="download-container">
+                           <a href="" download class="kişisel-apk">İndir</a>
+                        </div>  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025  Asım Karabulut. Tüm hakları saklıdır.</p>
+             <p>iletişim : asimkarblt07@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript - Basit animasyonlar
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll animasyonu
+            const sections = document.querySelectorAll('section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+            
+            // Proje kartlarına hover efekti
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
