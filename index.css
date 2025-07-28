@@ -252,6 +252,86 @@ h2::after {
 .kişisel-apk:hover::after {
   transform: translateX(4px);
 }
+/**/
+.ruhsal-apk {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), #4285f4);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-width: 140px;
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.25);
+}
+
+.ruhsal-apk:hover {
+  background: linear-gradient(135deg, #1557b7, #3367d6);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 115, 232, 0.35);
+}
+
+.ruhsal-apk:active {
+  transform: translateY(0);
+}
+
+.ruhsal-apk::after {
+  content: "→";
+  margin-left: 8px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.ruhsal-apk:hover::after {
+  transform: translateX(4px);
+}
+/**/
+.yesil_sepet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), #4285f4);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-width: 140px;
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.25);
+}
+
+.yesil_sepet:hover {
+  background: linear-gradient(135deg, #1557b7, #3367d6);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 115, 232, 0.35);
+}
+
+.yesil_sepet:active {
+  transform: translateY(0);
+}
+
+.yesil_sepet::after {
+  content: "→";
+  margin-left: 8px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.yesil_sepet:hover::after {
+  transform: translateX(4px);
+}
 
 footer {
   text-align: center;
@@ -274,7 +354,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Animasyonlar */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -284,7 +363,6 @@ section {
   animation: fadeIn 0.8s ease forwards;
 }
 
-/* Responsive Tasarım */
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr;
@@ -314,6 +392,14 @@ section {
   }
   
   .kişisel-apk {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+   .ruhsal-apk {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+   .yesil_sepet {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
   }
