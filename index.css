@@ -264,6 +264,39 @@ footer a {
 footer a:hover {
   color: var(--secondary);
 }
+/* Sosyal medya ikonları */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    color: #ffffff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon.instagram {
+    background-color: #E1306C;
+}
+
+.social-icon.linkedin {
+    background-color: #0077B5;
+}
+
+.social-icon.github {
+    background-color: #24292e;
+}
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
