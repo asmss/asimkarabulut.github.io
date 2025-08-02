@@ -238,8 +238,8 @@ h2::after {
   color: white;
 }
 .kimhaklı {
-  background: linear-gradient(135deg, #7c3aed, #a78bfa);
-  color: white;
+    background: linear-gradient(135deg, #3aed99, #8b9bfa);
+    color: white;
 }
 .kişisel-apk:hover, .ruhsal-apk:hover, .yesil_sepet:hover ,.kimhaklı:hover {
   transform: translateY(-2px);
@@ -341,4 +341,5 @@ section {
     border-radius: 8px;
   }
 }
+
 
