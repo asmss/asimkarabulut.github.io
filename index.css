@@ -211,7 +211,7 @@ h2::after {
   text-align: center;
 }
 
-.kişisel-apk, .ruhsal-apk, .yesil_sepet {
+.kişisel-apk, .ruhsal-apk, .yesil_sepet, .kimhaklı {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -237,8 +237,11 @@ h2::after {
   background: linear-gradient(135deg, #7c3aed, #a78bfa);
   color: white;
 }
-
-.kişisel-apk:hover, .ruhsal-apk:hover, .yesil_sepet:hover {
+.kimhaklı {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: white;
+}
+.kişisel-apk:hover, .ruhsal-apk:hover, .yesil_sepet:hover ,.kimhaklı:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
 }
@@ -264,7 +267,6 @@ footer a {
 footer a:hover {
   color: var(--secondary);
 }
-/* Sosyal medya ikonları */
 .social-icons {
     margin-top: 10px;
     display: flex;
@@ -339,3 +341,4 @@ section {
     border-radius: 8px;
   }
 }
+
