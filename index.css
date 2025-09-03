@@ -242,7 +242,7 @@ h2::after {
     color: white;
 }
 .Neobez {
-    background: linear-gradient(135deg, #3aed99, #8b9bfa);
+    background: linear-gradient(135deg, #000000, #1231e5);
     color: white;
 }
 .kişisel-apk:hover, .ruhsal-apk:hover, .yesil_sepet:hover ,.kimhaklı:hover,Neobez:hover {
@@ -345,6 +345,7 @@ section {
     border-radius: 8px;
   }
 }
+
 
 
 
