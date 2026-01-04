@@ -246,7 +246,7 @@ h2::after {
     color: white;
 }
 .CV_maker {
-    background: linear-gradient(135deg, ##7c3aed, #1231e5);
+    background: linear-gradient(135deg, #7c3aed, #1231e5);
     color: white;
 }
 .snippetkrblt {
@@ -357,6 +357,7 @@ section {
     border-radius: 8px;
   }
 }
+
 
 
 
